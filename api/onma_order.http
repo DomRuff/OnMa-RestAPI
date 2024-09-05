@@ -1,0 +1,39 @@
+### Create new order ###
+POST http://localhost:8080/api/order
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "orderDate": "2024-09-04T13:40:35",
+  "productId": 1,
+  "quantity": 1,
+  "status": "Pending",
+  "totalAmount": 1
+}
+
+
+### Find all orders ###
+GET http://localhost:8080/api/order
+
+
+### Find order by id ###
+GET http://localhost:8080/api/order/1
+
+
+### Update an order ###
+PUT http://localhost:8080/api/order/1
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "orderDate": "2024-09-04T13:40:35",
+  "productId": 1,
+  "quantity": 1,
+  "status": "Delivered",
+  "totalAmount": 1
+}
+
+
+### Delete an order ###
+DELETE http://localhost:8080/api/order/1
+

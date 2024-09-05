@@ -1,0 +1,37 @@
+### Create new product ###
+POST http://localhost:8080/api/product
+Content-Type: application/json
+
+{
+    "name":  "Sourdough Bread",
+    "description": "A loaf of sourdough bread.",
+    "category": "Grocery",
+    "price": 1.99,
+    "quantity": 1,
+    "sellerId": 1
+}
+
+### Find all products ###
+GET http://localhost:8080/api/product
+
+
+### Find product by id ###
+GET http://localhost:8080/api/product/1
+
+
+
+### Update a product ###
+PUT http://localhost:8080/api/product/1
+Content-Type: application/json
+
+{
+  "name": "Rye Bread",
+  "description": "A loaf of rye bread.",
+  "category": "Grocery",
+  "price": 2.99,
+  "quantity": 2,
+  "sellerId": 1
+}
+
+### Delete a product ###
+DELETE http://localhost:8080/api/product/1
