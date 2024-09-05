@@ -29,7 +29,7 @@ The **OnMa RestAPI** is a REST API built using Spring Boot, backed by a MySQL da
 
 ## Models
 
-The **OnMa RestAPI** API provides three key models: **User**, **Product**, and **Order**. These models define the entities stored in the MySQL database and their relationships. The models are barebone and may be expanded on in the future.
+The **OnMa RestAPI** API provides three key models: **User**, **Product**, and **Order**. These models define the entities stored in the MySQL database and their relationships. The models are barebone and may be expanded on in the future. Examples are provided below to get an idea of how they are structured. Full classes can be found in the `models` folder.
 
 ### User Model
 ```java
