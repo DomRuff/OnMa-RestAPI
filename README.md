@@ -196,9 +196,9 @@ cd OnMa-RestAPI
 
 2. **Configure MySql:** Set up a MySQL database and update the `application.properties` file with your MySQL configuration:
 ```bash
-spring.datasource.url=jdbc:mysql://localhost:3306/olla_db
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+spring.datasource.url= YOUR DATABASE
+spring.datasource.username= YOUR USERNAME
+spring.datasource.password= YOUR PASSWORD
 ```
 
 3. **Build the project:** Run Maven to install dependencies and build the project:
