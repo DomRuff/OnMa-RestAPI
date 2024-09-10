@@ -89,12 +89,17 @@ public enum OrderStatus {
     Cancelled,
 }
 ```
+
+--- 
+
 ## Repositories
 
 The Spring Data JPA's *CrudRepository* interface is leveraged to perform database operations on the entities. Each model has its own repository:
 - **UserRepository**
 - **ProductRepository**
 - **OrderRepository**
+
+---
 
 ## Services
 
@@ -107,7 +112,7 @@ the API is able to keep the internal data model separate from the external facin
 
 ### Example User Service
 
-An example of how the service class utilizes Requests and Response classes, rather than relying on the original mode. Full service classes can be found in the `service` folder. 
+An example of how the service class utilizes Requests and Response classes, rather than relying on the original mode. Full service classes can be found in the `service` package. 
 ```java
 public class UserService {
   public void createUser(UserRequest userRequest) {...}
@@ -128,7 +133,7 @@ public class UserService {
 
 ### Example DTOs
 
-An example of how Requests and Responses are used in the service classes, rather than relying on the original mode. Full DTO classes can be found in the `DTO` folder. 
+An example of how Requests and Responses are used in the service classes, rather than relying on the original mode. Full DTO classes can be found in the `dto` package. 
 
 UserRequest DTO
 ```java
@@ -148,7 +153,7 @@ public class UserResponse {
     private String password;
 }
 ```
-
+---
 ## Controllers & Endpoints
 
 Each model has a dedicated REST controller that provides mappings for CRUD operations. Below are the mappings and endpoints for each entity.
@@ -182,6 +187,7 @@ Each model has a dedicated REST controller that provides mappings for CRUD opera
 | `PUT`       | `/order/{id}`     | Update an order              |
 | `DELETE`    | `/order/{id}`     | Delete an order              |
 
+---
 
 ## Setup Instructions
 
